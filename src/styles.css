@@ -2,8 +2,6 @@
 body {
     font-family: quicksand, sans-serif;
     font-weight: normal;
-    
-
      align-items: center;
      justify-content: center;
      padding: 12px 12px 12px 12px !important;
@@ -17,9 +15,6 @@ body {
  a:hover {
      text-decoration: underline;
  }
-
-
-
 
 p {
     line-height: 1.6;
@@ -35,7 +30,7 @@ p {
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: rgb(255, 214, 10);
+  --accent-color: #ffd60a;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -44,7 +39,7 @@ p {
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
+:root { 
   --nav-color: #142858;
   /* The default color of the main navmenu links */
   --nav-hover-color: rgb(255, 214, 10);
