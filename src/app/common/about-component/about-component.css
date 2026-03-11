@@ -8,6 +8,17 @@
   padding-bottom: 60px;
 }
 
+ h2 {
+
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff !important;
+  text-align: center;
+  justify-content: center;
+
+
+}
+
 .about .about-images-wrapper {
   position: relative;
   padding-bottom: 60px;
@@ -149,12 +160,7 @@
   transform: translateY(-50%);
 }
 
-.about h2 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
+
 
 @media (max-width: 768px) {
   .about h2 {
@@ -164,14 +170,14 @@
 
 .about .lead-text {
   font-size: 1.1rem;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: var(--default-color);
   margin-bottom: 16px;
   font-weight: 500;
 }
 
 .about .description {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  line-height: 1.7;
+  color: #fff !important;
+
 }
 
 .about .features-grid {
@@ -245,7 +251,7 @@
 
 .about .stat-box .label {
   font-size: 0.875rem;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #fff !important;
   font-weight: 500;
 }
 
@@ -334,4 +340,3 @@
     transform: translateY(-8px);
   }
 }
-

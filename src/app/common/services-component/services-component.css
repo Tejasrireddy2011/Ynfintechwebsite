@@ -2,8 +2,19 @@
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  padding: 100px 0;
+  padding: 20px 0 50px 0px;
   background-color: var(--background-color);
+}
+
+.section-title p {
+  color: var(--default-color);
+  text-align: center !important;
+  font-size: 16px !important;
+}
+
+.service-text {
+  text-align: center;
+  color: var(--default-color);
 }
 
 @media (max-width: 768px) {
@@ -34,8 +45,8 @@
 
 .services .service-card p {
   font-size: 16px;
-  line-height: 1.7;
-  color: color-mix(in srgb, var(--nav-color), transparent 40%);
+
+  color: #000 !important;
   margin-bottom: 24px;
   flex-grow: 1;
 }
@@ -43,32 +54,28 @@
 
 .services .service-card.featured {
   background: var(--accent-color);
-  transform: scale(1.02);
+
 }
 
-@media (min-width: 992px) {
-  .services .service-card.featured {
-    transform: scale(1.05);
-  }
-}
 
-.services .service-card.featured:hover {
-  transform: scale(1.02) translateY(-8px);
-}
 
-@media (min-width: 992px) {
-  .services .service-card.featured:hover {
-    transform: scale(1.05) translateY(-8px);
-  }
+
+
+.service-card:hover {
+  border: 3px solid rgb(255, 214, 10) !important;
+
 }
 
 .services .service-card.featured .icon-wrapper {
   background: color-mix(in srgb, var(--contrast-color) 20%, transparent);
+  color: var(--contrast-color) !important;
 }
 
 .services .service-card.featured .icon-wrapper i {
   color: var(--contrast-color);
 }
+
+
 
 .services .service-card.featured h3 {
   color: var(--contrast-color);
@@ -80,6 +87,7 @@
 
 .services .service-card.featured .service-link {
   color: var(--contrast-color);
+
 }
 
 .services .service-card.featured .service-link:hover {
@@ -103,6 +111,14 @@
   color: var(--contrast-color);
 }
 
+.card-color {
+  color: var(--contrast-color) !important;
+
+  padding: 6px 4px !important;
+  border-radius: 15px !important;
+
+}
+
 .services .service-card .featured-badge i {
   font-size: 10px;
 }
@@ -111,7 +127,7 @@
   width: 56px;
   height: 56px;
   border-radius: 12px;
-  background: color-mix(in srgb, var(--accent-color) 15%, transparent);
+  background: rgb(255, 214, 10) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,8 +137,9 @@
 
 .services .service-card .icon-wrapper i {
   font-size: 28px;
-  color: var(--accent-color);
+  color: var(--contrast-color);
   transition: all 0.3s ease;
+
 }
 
 
@@ -167,7 +184,8 @@
 .services .stats-row {
   margin-top: 64px;
   padding: 48px 32px;
-  background: color-mix(in srgb, var(--accent-color) 8%, transparent);
+  background: color-mix(in srgb, var(--accent-color) 4%, transparent);
+  border: 3px solid rgb(255, 214, 10) !important;
   border-radius: 16px;
 }
 
@@ -201,7 +219,7 @@
   display: block;
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1px;
   color: var(--default-color);
 }
@@ -333,7 +351,7 @@
 }
 
 .service-details .key-features .feature-card:hover {
-  transform: translateY(-6px);
+
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 }
 

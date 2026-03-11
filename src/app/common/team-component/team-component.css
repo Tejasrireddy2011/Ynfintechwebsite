@@ -1,6 +1,32 @@
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+.section-title h2 {
+
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #000 !important;
+  margin-top: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+.team-stats {
+  margin-top: 64px;
+  padding: 48px 32px;
+  background: color-mix(in srgb, var(--accent-color) 4%, transparent);
+  border: 3px solid rgb(255, 214, 10) !important;
+  border-radius: 16px;
+}
+
+.section-title p {
+  color: #000 !important;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
 .team .team-card {
   background: var(--surface-color);
   border-radius: 16px;
@@ -29,11 +55,12 @@
 
 .team .team-card.featured .member-info {
   background: var(--accent-color);
+  color: var(--contrast-color);
 }
 
 .team .team-card.featured .member-info .member-badge {
-  background: color-mix(in srgb, var(--contrast-color) 20%, transparent);
-  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--contrast-color) 10%, transparent);
+  color: #000 !important;
 }
 
 .team .team-card.featured .member-info h4 {
@@ -97,6 +124,7 @@
   background: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-4px);
+
 }
 
 .team .team-card .member-info {
@@ -104,17 +132,209 @@
   text-align: center;
   transition: background 0.3s ease;
 }
+.cta-section {
+  margin-top: 80px;
+  padding: 64px;
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color) 70%, #6366f1));
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .portfolio .cta-section {
+    padding: 48px 32px;
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio .cta-section {
+    padding: 40px 24px;
+    border-radius: 16px;
+  }
+}
+
+.cta-section .cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-section .cta-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: color-mix(in srgb, var(--contrast-color) 15%, transparent);
+  color: var(--contrast-color);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  margin-bottom: 24px;
+}
+
+.cta-section .cta-label i {
+  font-size: 16px;
+}
+
+.cta-section h3 {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--contrast-color);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .portfolio .cta-section h3 {
+    font-size: 28px;
+  }
+}
+
+.cta-section p {
+  font-size: 18px;
+  color: color-mix(in srgb, var(--contrast-color) 85%, transparent);
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .portfolio .cta-section p {
+    font-size: 16px;
+  }
+}
+
+.cta-section .cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .portfolio .cta-section .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cta-section .btn-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 16px;
+  background: var(--surface-color);
+  color: var(--accent-color);
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px) {
+  .portfolio .cta-section .btn-cta-primary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.cta-section .btn-cta-primary:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.cta-section .btn-cta-primary:hover i {
+  transform: translateX(4px);
+}
+
+.cta-section .btn-cta-primary i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.cta-section .btn-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: transparent;
+  color: var(--contrast-color);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid color-mix(in srgb, var(--contrast-color) 40%, transparent);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media (max-width: 576px) {
+  .portfolio .cta-section .btn-cta-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.cta-section .btn-cta-secondary:hover {
+  background: color-mix(in srgb, var(--contrast-color) 15%, transparent);
+  border-color: var(--contrast-color);
+}
+
+.cta-section .btn-cta-secondary i {
+  font-size: 20px;
+}
+
+.cta-section .cta-decoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.cta-section .cta-decoration .floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--contrast-color) 10%, transparent);
+}
+
+.cta-section .cta-decoration .floating-shape.shape-1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  right: -50px;
+}
+
+.cta-section .cta-decoration .floating-shape.shape-2 {
+  width: 200px;
+  height: 200px;
+  bottom: -80px;
+  left: -60px;
+}
+
+.cta-section .cta-decoration .floating-shape.shape-3 {
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+}
 
 .team .team-card .member-info .member-badge {
   display: inline-block;
   padding: 6px 14px;
   border-radius: 50px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: color-mix(in srgb, var(--accent-color) 15%, transparent);
-  color: var(--accent-color);
+  background: var(--accent-color) !important;
+  color: #000 !important;
   margin-bottom: 12px;
 }
 
@@ -172,7 +392,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: color-mix(in srgb, var(--default-color) 60%, transparent);
+  color: #000 !important;
 }
 
 .team .team-stats .stat-divider {
